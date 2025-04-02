@@ -15,6 +15,10 @@ public class StudentMapper {
     public StudentRespons toStudentRespons(Student student){
         var studentRespons = new StudentRespons(student.getid(), student.getname(), student.getschool().getid());
         return studentRespons;
-    
+    }
+
+    public StudentDTO toStudentDTO(Student student){
+        var studentDTO = new StudentDTO(student.getname(), student.getschool().getid());
+        return studentDTO;
     }
 }

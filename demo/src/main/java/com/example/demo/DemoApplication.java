@@ -21,7 +21,7 @@ public class DemoApplication {
 	public String hallo(){
 		return "Hallo World !!!";
 	}
-
+	
 	@Bean
 	CommandLineRunner commandLineRunner(StudentRespsitory studentRespsitory){
 		return args -> {
